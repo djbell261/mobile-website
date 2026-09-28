@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+nav {
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+.games {
+    display: flex;
+    gap: 20px;
+}
+
+.game-card {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .games {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        width: 90%;
+    }
+}
